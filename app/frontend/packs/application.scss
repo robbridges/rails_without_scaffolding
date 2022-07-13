@@ -1,0 +1,27 @@
+// inside app/frontend/packs/application.scss  
+  
+// Just a quick ugly style to see if our CSS works  
+
+#logo {
+  float: left;
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+#sticky-footer {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  color: red;
+}
+
+
+
+
+  
+// Import Bootstrap v5  
+@import "~bootstrap/scss/bootstrap"; 
