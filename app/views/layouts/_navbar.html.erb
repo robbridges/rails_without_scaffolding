@@ -10,16 +10,13 @@
       
           <%= link_to "Articles", articles_path, class:"nav-link text-white" %>
         </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="#">Link</a>
-        </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Dropdown
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><%= link_to 'New Article', new_article_path, class:"dropdown-item" %></li>
+            <li><%= link_to 'About', about_path, class:"dropdown-item" %></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
