@@ -8,4 +8,12 @@
 
 <h3 class="text-center mt-4"> Articles </h3>
 
+<div>
+  <%= will_paginate @articles, renderer: WillPaginate::ActionView::BootstrapLinkRenderer, list_classes: %w(pagination justify-content-center) %>
+</div>
+
 <%= render 'articles/article' %>
+
+<div class="p-5">
+  <%= will_paginate @articles, renderer: WillPaginate::ActionView::BootstrapLinkRenderer, list_classes: %w(pagination justify-content-center) %>
+</div>

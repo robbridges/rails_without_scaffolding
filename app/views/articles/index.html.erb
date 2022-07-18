@@ -1,4 +1,12 @@
 <h1 class="text-center mt-4">Articles listing page </h1>
 
+<div>
+  <%= will_paginate @articles, renderer: WillPaginate::ActionView::BootstrapLinkRenderer, list_classes: %w(pagination justify-content-center) %>
+</div>
 <%= render 'article' %>
+
+<div class="p-5">
+  <%= will_paginate @articles, renderer: WillPaginate::ActionView::BootstrapLinkRenderer, list_classes: %w(pagination justify-content-center) %>
+</div>
+
 
