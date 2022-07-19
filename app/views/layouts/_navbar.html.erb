@@ -34,6 +34,14 @@
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><%= link_to 'View Your Profile', user_path(current_user), class:"dropdown-item" %></li>
               <li><%= link_to 'Edit your profile', edit_user_path(current_user), class:"dropdown-item" %></li>
+              <li>
+              <%= 
+                link_to 'Delete your profile', 
+                user_path(current_user), 
+                class: "dropdown-item text-danger", 
+                method: :delete, 
+                data: {confirm: "Are you sure, this will delete your account and all articles"}
+              %>
             </ul>
           </li>
           <li class="nav-item">
